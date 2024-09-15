@@ -1,0 +1,53 @@
+/* 共通のスタイル */
+body {
+  font-family: "Arial", "Meiryo", sans-serif;
+  text-align: center; /* 中央寄せ */
+  font-size: 20px; /* ルート要素のフォントサイズ */
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px; /* ルート要素の2倍 */
+  letter-spacing: 1.2em; /* 文字間を1.2倍に */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 影の設定 */
+  border-bottom: 3px solid rgb(115, 115, 114); /* 下線の設定 */
+  color: #000; /* デフォルトの文字色 */
+}
+
+/* フォントカラーの設定 */
+h1 span.skyblue {
+  color: skyblue;
+}
+
+h1 span.pink {
+  color: rgb(255, 192, 203);
+}
+
+h2 {
+  color: skyblue; /* デフォルトはスカイブルー */
+}
+
+h2.pink {
+  color: rgb(255, 192, 203); /* ピンク */
+}
+
+/* id="basic" 内のスタイル */
+#basic h2 {
+  color: rgb(255, 192, 203); /* ピンク */
+}
+
+#basic p {
+  font-weight: normal; /* 通常の太さ */
+}
+
+/* 特定のp要素を太字にする */
+#basic p:nth-of-type(1),
+#basic p:nth-of-type(2),
+#basic p:nth-of-type(3) {
+  font-weight: bold;
+}
+
+/* その他のp要素のスタイル */
+p {
+  font-weight: normal; /* 通常の太さ */
+}
